@@ -1,0 +1,175 @@
+\section{פוטנציאלים מדורגים, פוטנציאל פעולה ואינטגרציה סינפטית}
+
+\subsection{שלושה סוגי פוטנציאלים}
+בנוירון קיימים שלושה סוגי שינויים במתח הממברנה:
+\begin{itemize}
+\item \textbf{פוטנציאל מנוחה} (\myen{Resting potential})
+\item \textbf{פוטנציאל מדורג} (\myen{Graded potential})
+\item \textbf{פוטנציאל פעולה} (\myen{Action Potential, AP})
+\end{itemize}
+
+\subsection{פוטנציאל מדורג (\myen{Graded potential})}
+פוטנציאל מדורג הוא שינוי \textbf{מקומי וזמני} ב-\myen{$V_m$}, הנגרם ע"י פתיחה של
+\textbf{תעלות תלויות־ליגנד} (לרוב בעקבות נוירוטרנסמיטר).
+
+\textbf{מאפיינים מרכזיים:}
+\begin{itemize}
+\item \textbf{מדורג} – עוצמת השינוי תלויה בעוצמת הגירוי.
+\item \textbf{דועך עם מרחק} – אינו מתפשט לאורך כל האקסון.
+\item יכול להיות:
+\begin{itemize}
+\item \textbf{דה־פולריזציה} – פחות שלילי (מעורר)
+\item \textbf{היפר־פולריזציה} – יותר שלילי (מעכב)
+\end{itemize}
+\end{itemize}
+
+\textbf{חשוב למבחן:}  
+פוטנציאל מדורג \textbf{לא} obeys חוק “הכול או כלום”.
+
+\subsection{EPSP ו-IPSP}
+\begin{itemize}
+\item \textbf{EPSP} (\myen{Excitatory Postsynaptic Potential}) –  
+דה־פולריזציה פוסט־סינפטית, מקרבת את התא לסף העירור.
+\item \textbf{IPSP} (\myen{Inhibitory Postsynaptic Potential}) –  
+היפר־פולריזציה פוסט־סינפטית, מרחיקה את התא מסף העירור.
+\end{itemize}
+
+\textbf{דוגמאות יוניות נפוצות:}
+\begin{itemize}
+\item \myen{EPSP}: פתיחת תעלות \myen{Na$^+$} (לרוב דרך רצפטורים לגלוטמט).
+\item \myen{IPSP}: פתיחת תעלות \myen{Cl$^-$} (\myen{GABA\textsubscript{A}}) או \myen{K$^+$} (\myen{GABA\textsubscript{B}}).
+\end{itemize}
+
+\subsection{GABA – עיכוב סינפטי: GABA\textsubscript{A} ו-GABA\textsubscript{B}}
+
+\textbf{GABA} (\myen{Gamma-Aminobutyric Acid}) הוא הנוירוטרנסמיטר
+\textbf{המעכב הראשי} במערכת העצבים המרכזית.
+
+ל-GABA שני סוגי רצפטורים עיקריים, בעלי מנגנון שונה אך תוצאה משותפת:
+\textbf{הקטנת הסיכוי ליצירת פוטנציאל פעולה}.
+
+\subsubsection{השוואה בין רצפטורי GABA}
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{רצפטור} &
+\textbf{סוג רצפטור} &
+\textbf{תעלה} &
+\textbf{מהירות} &
+\textbf{מנגנון עיכוב} \\
+\hline
+GABA\textsubscript{A} &
+יונוטרופי &
+Cl$^-$ &
+מהיר &
+Shunting / היפר־פולריזציה \\
+\hline
+GABA\textsubscript{B} &
+מטבוטרופי (GPCR) &
+K$^+$ (בעקיפין) &
+איטי &
+היפר־פולריזציה \\
+\hline
+\end{tabular}
+\caption{השוואה בין סוגי רצפטורי GABA והאופן שבו הם יוצרים IPSP.}
+\end{table}
+
+\subsubsection{GABA\textsubscript{A} – תעלות כלור (Cl$^-$)}
+קשירת GABA ל-\myen{GABA\textsubscript{A}} פותחת \textbf{תעלות Cl$^-$}
+ויוצרת \textbf{IPSP מהיר}.
+
+חשוב:
+\begin{itemize}
+\item גם אם \(E_{Cl} \approx V_m\), פתיחת תעלות Cl$^-$
+\textbf{עדיין מעכבת}.
+\item הסיבה: \textbf{Shunting inhibition} –  
+עלייה במוליכות הממברנה ש״מנקזת״ EPSP-ים נכנסים.
+\end{itemize}
+
+כלומר, העיכוב אינו חייב להיות שינוי גדול במתח,
+אלא \textbf{הקטנת ההשפעה של גירויים מעוררים}.
+
+\subsubsection{GABA\textsubscript{B} – תעלות אשלגן (K$^+$)}
+\myen{GABA\textsubscript{B}} הוא רצפטור מטבוטרופי הפועל דרך שליחים שניוניים.
+
+קשירת GABA גורמת ל:
+\begin{itemize}
+\item פתיחה עקיפה של תעלות K$^+$.
+\item יציאת K$^+$ מהתא.
+\item \textbf{היפר־פולריזציה ברורה} של הממברנה.
+\end{itemize}
+
+מאפיינים:
+\begin{itemize}
+\item איטי יותר מ-GABA\textsubscript{A}.
+\item ממושך יותר.
+\item מרחיק את התא מסף העירור.
+\end{itemize}
+
+\subsubsection{שורה למבחן}
+\textbf{GABA\textsubscript{A}} – עיכוב מהיר דרך Cl$^-$ (Shunting).  
+\textbf{GABA\textsubscript{B}} – עיכוב איטי דרך K$^+$.  
+שניהם יוצרים \textbf{IPSP} ומקטינים את הסיכוי לפוטנציאל פעולה.
+
+\subsection{סכימה עצבית (\myen{Summation})}
+פוטנציאלים מדורגים יכולים להצטבר:
+\begin{itemize}
+\item \textbf{סכימה בזמן} (\myen{Temporal summation}) – גירויים חוזרים מאותה סינפסה.
+\item \textbf{סכימה במרחב} (\myen{Spatial summation}) – גירויים מכמה סינפסות שונות.
+\end{itemize}
+
+ההחלטה האם ייווצר פוטנציאל פעולה מתקבלת ב-\textbf{axon hillock}.
+
+\subsection{פוטנציאל פעולה (\myen{Action Potential})}
+פוטנציאל פעולה הוא שינוי חד ומהיר ב-\myen{$V_m$}, המתפשט לאורך האקסון.
+
+\textbf{מאפיינים מרכזיים:}
+\begin{itemize}
+\item obeys חוק \textbf{“הכול או כלום”}.
+\item גודל קבוע – אינו תלוי בעוצמת הגירוי.
+\item מתפשט ללא דעיכה.
+\end{itemize}
+
+\subsection{סף העירור (\myen{Threshold})}
+\begin{itemize}
+\item סף עירור טיפוסי: \(-55\,\text{mV}\).
+\item חציית הסף גורמת לפתיחה מאסיבית של תעלות \Na תלויות־מתח.
+\item נוצר \textbf{משוב חיובי} → דה־פולריזציה מהירה.
+\end{itemize}
+
+\subsection{שלבי פוטנציאל הפעולה}
+\begin{enumerate}
+\item \textbf{דה־פולריזציה}: פתיחת תעלות \Na תלויות־מתח.
+\item \textbf{רפולריזציה}: אינאקטיבציה של \Na ופתיחת תעלות \Kion.
+\item \textbf{היפר־פולריזציה}: יציאה עודפת של \Kion.
+\end{enumerate}
+
+\subsection{התקופה הרפרקטורית}
+לאחר פוטנציאל פעולה קיימת תקופה שבה קשה או בלתי אפשרי לייצר פוטנציאל נוסף:
+\begin{itemize}
+\item \textbf{תקופה רפרקטורית מוחלטת} –  
+לא ניתן לייצר AP נוסף (תעלות \Na באינאקטיבציה).
+\item \textbf{תקופה רפרקטורית יחסית} –  
+אפשרי AP, אך נדרש גירוי חזק במיוחד (היפר־פולריזציה).
+\end{itemize}
+
+\subsection{למה נוירוטרנסמיטר לא יוצר פוטנציאל פעולה ישירות}
+\begin{itemize}
+\item נוירוטרנסמיטר פותח \textbf{תעלות תלויות־ליגנד}.
+\item פתיחה זו יוצרת \textbf{פוטנציאל מדורג בלבד}.
+\item פוטנציאל פעולה דורש פתיחה של \textbf{תעלות \Na תלויות־מתח}.
+\item רק כאשר סכימת ה-EPSP מביאה את \myen{$V_m$} לסף – נוצר AP.
+\end{itemize}
+
+\textbf{שורת מבחן:}  
+נוירוטרנסמיטר \textbf{מתחיל} את האות –  
+תעלות תלויות־מתח \textbf{יוצרות} את פוטנציאל הפעולה.
+
+\subsection{קידוד עוצמה}
+\begin{itemize}
+\item עוצמת הגירוי \textbf{לא} מקודדת בגודל ה-AP.
+\item העוצמה מקודדת ב-\textbf{תדירות} פוטנציאלי הפעולה (\myen{Rate coding}).
+\end{itemize}
