@@ -1,1 +1,34 @@
+# macOS
 .DS_Store
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# latexmk / build dirs
+_latexmk/
+build/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Optional: keep PDFs tracked? (comment out if you DO want PDFs in git)
+# *.pdf
