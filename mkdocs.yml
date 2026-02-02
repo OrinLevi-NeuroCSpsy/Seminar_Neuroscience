@@ -1,0 +1,82 @@
+site_name: סמינר מדעי המוח א'
+site_description: סיכום מקיף לסמינר מדעי המוח א', אוניברסיטת תל אביב
+docs_dir: docs
+site_url: https://orinlevi.github.io/seminar_neuroscience_notes/
+
+repo_name: seminar_neuroscience_notes
+repo_url: https://github.com/orinlevi/seminar_neuroscience_notes
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/orinlevi/seminar_neuroscience_notes
+
+theme:
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  name: material
+  custom_dir: overrides
+  language: he
+  direction: rtl
+  palette:
+    - scheme: slate
+      media: "(min-width: 0)"
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: מצב יום
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: מצב לילה
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: he
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - בית: README.md
+  - סיכומים:
+    - פיזיולוגיה:
+      - יונים וגרדיאנטים: notes/01_ions_gradients.md
+      - פוטנציאלים מדורגים ופעולה: notes/02_potentials.md
+      - הולכה באקסון: notes/03_conduction.md
+      - סינפסות ורצפטורים: notes/04_synapses.md
+    - נוירואנטומיה:
+      - מנחים וחתכים: notes/05_neuroanatomy.md
+  - תמונות:
+    - גלריית תמונות: images.md

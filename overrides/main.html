@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ config.site_name }}">
+  <meta property="og:description" content="{{ config.site_description }}">
+  <meta property="og:url" content="{{ config.site_url }}">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ config.site_name }}">
+  <meta name="twitter:description" content="{{ config.site_description }}">
+{% endblock %}
