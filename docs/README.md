@@ -1,7 +1,6 @@
 <div class="hero-banner" markdown>
 
-# 🧠 סמינר מדעי המוח א'
-{ .main-title }
+<h1 class="main-title">🧠 סמינר מדעי המוח א'</h1>
 
 <p class="hero-subtitle">סיכום מקיף לסמינר מדעי המוח א' | אוניברסיטת תל אביב | שנה א' סמסטר א'</p>
 <p class="hero-author">נוצר על ידי אורין לוי</p>
@@ -21,6 +20,14 @@
 <div class="stat-number">∞</div>
 <div class="stat-label">פוטנציאלי פעולה</div>
 </div>
+</div>
+
+---
+
+<div style="text-align: center; margin: 20px 0;">
+<a href="assets/seminar_neuroscience-MySum.pdf" download class="md-button md-button--primary">
+📥 הורדת סיכום PDF
+</a>
 </div>
 
 ---
